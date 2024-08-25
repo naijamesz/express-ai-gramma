@@ -3,6 +3,7 @@ import express from 'express';
 import fetch from 'node-fetch';
 
 const app = express();
+
 const port = process.env.PORT || 5000;
 
 app.set('view engine', 'ejs');
@@ -69,3 +70,5 @@ app.post('/correct', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
+
+export default app;
